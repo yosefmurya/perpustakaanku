@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Waktu pembuatan: 26. Oktober 2010 jam 18:52
+-- Waktu pembuatan: 23. Nopember 2010 jam 15:10
 -- Versi Server: 5.1.30
 -- Versi PHP: 5.2.8
 
@@ -122,5 +122,44 @@ CREATE TABLE IF NOT EXISTS `penerbit` (
 
 --
 -- Dumping data untuk tabel `penerbit`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `role`
+--
+
+CREATE TABLE IF NOT EXISTS `role` (
+  `id_role` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nama_role` varchar(20) NOT NULL,
+  PRIMARY KEY (`id_role`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data untuk tabel `role`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `email` varchar(100) NOT NULL DEFAULT '0',
+  `role_id` int(11) NOT NULL DEFAULT '0',
+  `user` varchar(20) DEFAULT NULL,
+  `password` varchar(300) DEFAULT NULL,
+  `aktif` varchar(1) DEFAULT NULL,
+  `last_login` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='user perpustakaan' AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data untuk tabel `user`
 --
 
