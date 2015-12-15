@@ -1,0 +1,1 @@
+Sistem aplikasi perpustakaan berbasis Codeigniter dan Jquery. Target awal adalah menyediakan sarana untuk mendukung proses penyimpanan dan peminjaman media baik buku,koran,rekaman digital
